@@ -231,6 +231,4 @@ git log --oneline --graph --all --decorate
 
 **Maintained with 💙 by Sahastrajeet (SJ)**
 
-![Profile Views](https://komarev.com/ghpvc/?username=SahastrajeetSJ&color=blueviolet&style=flat-square)
-
 </div>
