@@ -2,11 +2,10 @@
 
 # 🚀 GitLearningWithSJ
 
-![Git Banner](https://raw.githubusercontent.com/nicedoc/nicedoc.io/master/badges/git-banner.svg)
-
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 [![Maintained by SJ](https://img.shields.io/badge/Maintained%20by-SJ-blueviolet?style=for-the-badge)](https://github.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge)](https://github.com/)
 
 > **"Git is not memorization. It is understanding the graph."**
 
@@ -20,7 +19,7 @@
 
 <div align="center">
 
-![Git Workflow Animation](https://i.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.webp)
+<img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="480" alt="Git Workflow Animation"/>
 
 *The fundamental Git workflow — Working Directory → Staging Area → Repository*
 
@@ -35,31 +34,10 @@ I have moved beyond basic commits to understanding history manipulation and repo
 | Category | Commands |
 | :--- | :--- |
 | **Setup & Config** | `git init`, `git config` |
-| **Snapshots** | `git add`, `git commit`, `git .gitignore` |
+| **Snapshots** | `git add`, `git commit`, `.gitignore` |
 | **Navigation** | `git log`, `git switch`, `git branch` |
 | **History Control** | `git restore`, `git commit --amend` |
 | **Integration** | `git merge --no-ff`, `git rebase` |
-
----
-
-## 🌿 Branching Strategy
-
-<div align="center">
-
-![Git Branching](https://i.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.webp)
-
-*Branching in action — isolated streams of work flowing in parallel*
-
-</div>
-
-This project follows a professional naming convention (Feature/Bugfix/Release) to simulate a real-world development environment:
-
-- ✨ `feature/navbar` — Navigation component implementation.
-- ✨ `feature/hero` — Hero section design and logic.
-- ✨ `feature/contact` — Contact form integration.
-- 🐛 `bugfix/typo` — Correction of documentation and string literals.
-- 🔥 `hotfix/crash` — Critical patch for runtime stability.
-- 📦 `release/v1.0` — Production-ready stable build.
 
 ---
 
@@ -67,13 +45,13 @@ This project follows a professional naming convention (Feature/Bugfix/Release) t
 
 <div align="center">
 
-![Git Graph / DAG](https://miro.medium.com/v2/resize:fit:1400/1*MTBBaFG6qauNnlj6N-PO8Q.png)
+<img src="https://git-scm.com/book/en/v2/images/basic-branching-6.png" width="600" alt="Git DAG — Directed Acyclic Graph"/>
 
 *A Directed Acyclic Graph (DAG) — the true data structure behind every Git repository*
 
 </div>
 
-To view the complete evolutionary history of this project with a visual DAG, run the following command in your terminal:
+To view the complete evolutionary history of this project, run:
 
 ```bash
 git log --oneline --graph --all --decorate
@@ -96,13 +74,34 @@ git log --oneline --graph --all --decorate
 
 ---
 
+## 🌿 Branching Strategy
+
+<div align="center">
+
+<img src="https://git-scm.com/book/en/v2/images/lr-branches-2.png" width="600" alt="Git Branching Strategy"/>
+
+*Long-running and topic branches — the backbone of professional Git workflows*
+
+</div>
+
+This project follows a professional naming convention (Feature/Bugfix/Release) to simulate a real-world development environment:
+
+- ✨ `feature/navbar` — Navigation component implementation.
+- ✨ `feature/hero` — Hero section design and logic.
+- ✨ `feature/contact` — Contact form integration.
+- 🐛 `bugfix/typo` — Correction of documentation and string literals.
+- 🔥 `hotfix/crash` — Critical patch for runtime stability.
+- 📦 `release/v1.0` — Production-ready stable build.
+
+---
+
 ## 🔁 Merge vs. Rebase
 
 <div align="center">
 
-![Merge vs Rebase](https://i.giphy.com/media/cFkiFMDg3iFoI/giphy.webp)
+<img src="https://git-scm.com/book/en/v2/images/basic-rebase-3.png" width="580" alt="Git Rebase Diagram"/>
 
-*When things come together — the art of integration*
+*Rebase replays your commits on top of the target branch for a clean, linear history*
 
 </div>
 
@@ -120,9 +119,9 @@ git log --oneline --graph --all --decorate
 
 <div align="center">
 
-![Three States](https://git-scm.com/book/en/v2/images/areas.png)
+<img src="https://git-scm.com/book/en/v2/images/areas.png" width="550" alt="Git Three States — Working Directory, Staging Area, Repository"/>
 
-*Every file in Git lives in one of three states — understanding this is fundamental*
+*Every file in Git lives in one of three states — understanding this is the foundation of everything*
 
 </div>
 
@@ -130,6 +129,30 @@ git log --oneline --graph --all --decorate
 Working Directory  ──── git add ────▶  Staging Area  ──── git commit ────▶  .git Repository
       │                                                                              │
       │◀──────────────────────── git checkout / git restore ──────────────────────────│
+```
+
+---
+
+## 🏷️ Commit History & Parent Pointers
+
+<div align="center">
+
+<img src="https://git-scm.com/book/en/v2/images/commits-and-parents.png" width="560" alt="Git Commit History and Parent Pointers"/>
+
+*Each commit is a snapshot that points back to its parent — this chain IS your history*
+
+</div>
+
+Use **Conventional Commits** for clean, readable logs:
+
+```
+feat:     ✨ New feature
+fix:      🐛 Bug fix
+docs:     📝 Documentation update
+style:    💅 Formatting (no logic change)
+refactor: ♻️  Code restructure
+test:     🧪 Adding/fixing tests
+chore:    🔧 Tooling, config, maintenance
 ```
 
 ---
@@ -166,7 +189,7 @@ Thumbs.db
 
 ## 💡 Key Learning Objectives
 
-- [x] **Three States:** Understanding Working Directory, Staging Area, and `.git` Directory.
+- [x] **Three States:** Working Directory, Staging Area, and `.git` Directory.
 - [x] **Fast-forward vs Recursive merges:** Knowing when each strategy applies.
 - [x] **Rebase for clean history:** Linear, readable commit logs for production repos.
 - [x] **`.gitignore` mastery:** Maintaining repository hygiene from day one.
@@ -202,12 +225,12 @@ git log --oneline --graph --all --decorate
 
 <div align="center">
 
-![Keep Committing](https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
+<img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="400" alt="Keep Going!"/>
 
 *"Every expert was once a beginner. Keep committing."*
 
 **Maintained with 💙 by Sahastrajeet (SJ)**
 
-![Profile Views](https://komarev.com/ghpvc/?username=SJ&color=blueviolet&style=flat-square)
+![Profile Views](https://komarev.com/ghpvc/?username=SahastrajeetSJ&color=blueviolet&style=flat-square)
 
 </div>
