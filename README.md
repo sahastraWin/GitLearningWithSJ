@@ -36,3 +36,21 @@ To view the complete evolutionary history of this project with a visual DAG (Dir
 
 ```bash
 git log --oneline --graph --all --decorate
+
+💡 Key Learning Objectives
+[x] Understanding the Three States: Working Directory, Staging Area, and .git Directory.
+
+[x] Mastering Fast-forward vs Recursive merges.
+
+[x] Utilizing Rebase for a clean, linear project history.
+
+[x] Implementing a robust .gitignore to maintain repository hygiene.
+
+Maintained by Sahastrajeet (SJ)
+
+
+### Why this works:
+* **Tables:** It categorizes your commands, making your skill level look organized and systematic.
+* **Badges/Quotes:** Using the blockquote for your "Git is not memorization" line gives it a "Pro Tip" feel.
+* **Code Blocks:** Providing the `git log` command makes the README interactive for anyone who clones your repo.
+* **Checkboxes:** These visually represent your progress and areas of expertise.
